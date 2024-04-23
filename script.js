@@ -19,7 +19,7 @@ window.onload = () => {
             });
             
             entity.setAttribute('gps-new-entity-place', {
-                latitude: e.detail.position.latitude,
+                latitude: e.detail.position.latitude + 0.001,
                 longitude: e.detail.position.longitude
             });
             document.querySelector("a-scene").appendChild(entity);
